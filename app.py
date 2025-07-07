@@ -1,8 +1,9 @@
 from dotenv import load_dotenv
-from lessons.basic import hello_world_gpt, hello_world_hugging, prompt_template_gpt
+
+from lessons.llm_chain import run_chain
 
 load_dotenv()
 
-# result = hello_world_gpt()
-result = prompt_template_gpt()
-print(result)
+if __name__ == "__main__":
+    result = run_chain()
+    print(result)
